@@ -1,0 +1,15 @@
+<!-- templates/update_wiki_document.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Wiki Document</title>
+</head>
+<body>
+    <h1>Update Wiki Document</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">수정</button>
+    </form>
+</body>
+</html>

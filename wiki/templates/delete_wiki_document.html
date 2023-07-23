@@ -1,0 +1,29 @@
+<!-- templates/delete_wiki_document.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Wiki Document</title>
+</head>
+<body>
+    <h1>Delete Wiki Document</h1>
+    <p>Are you sure you want to delete "{{ document.title }}"?</p>
+    <form method="post" id="delete-form">
+        {% csrf_token %}
+        <button type="submit">Delete</button>
+    </form>
+
+    <script>
+        // 삭제 버튼을 누를 때 확인 팝업을 띄우는 함수
+        function confirmDelete(event) {
+            event.preventDefault();
+            if (confirm("정말 삭제하시겠습니까?")) {
+                document.getElementById("delete-form").submit();
+            }
+        }
+
+        // 삭제 버튼 클릭 시 confirmDelete 함수 호출
+        const deleteButton = document.querySelector("button[type='submit']");
+        deleteButton.addEventListener("click", confirmDelete);
+    </script>
+</body>
+</html>
