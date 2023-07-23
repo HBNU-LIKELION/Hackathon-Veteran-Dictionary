@@ -102,7 +102,7 @@ def login_view(request):
         if form.is_valid():
             user = form.get_user()
             login(request, user)
-            return redirect('index')
+            return redirect('index')  # 로그인 성공 시 index로 리다이렉트
     else:
         form = AuthenticationForm()
     return render(request, 'login.html', {'form': form})
