@@ -1,109 +1,55 @@
-# your_app_name/views.py
-from django.shortcuts import render, redirect, get_object_or_404
 from rest_framework import viewsets
 from .models import WikiDocument
 from .serializers import WikiDocumentSerializer
-from .forms import WikiDocumentForm
-from django.contrib.auth.decorators import login_required
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+from rest_framework.permissions import IsAuthenticated
 
-from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from django.contrib.auth import login, logout
-from django.contrib.auth.models import User
 
-# index view
-def index(request):
-    return render(request, 'index.html')
+import random
 
-# DRF ViewSet
 class WikiDocumentViewSet(viewsets.ModelViewSet):
     queryset = WikiDocument.objects.all()
     serializer_class = WikiDocumentSerializer
-    
-@login_required
-def create_wiki_document(request):
-    if request.method == 'POST':
-        title = request.POST['title']
-        content = request.POST['content']
-        author = request.user  # 현재 로그인한 사용자를 가져옴
 
-        document = WikiDocument.objects.create(title=title, content=content, author=author)
-        return redirect('wiki_document_detail', document_id=document.id)
+    # Create, Update, Delete 기능에만 로그인이 필요하도록 설정
+    permission_classes_by_action = {
+        'create': [IsAuthenticated],
+        'update': [IsAuthenticated],
+        'destroy': [IsAuthenticated],
+    }
 
-    form = WikiDocumentForm()
-    return render(request, 'create_wiki_document.html', {'form': form})
-
-
-def logout_view(request):
-    logout(request)
-    return redirect('index')  # 로그아웃 후 메인 페이지로 이동
+    def get_permissions(self):
+        try:
+            # 현재 요청하는 액션에 따라 적절한 퍼미션 클래스를 가져옴
+            return [permission() for permission in self.permission_classes_by_action[self.action]]
+        except KeyError:
+            # 지정한 액션에 대한 퍼미션 클래스가 없으면 기본 퍼미션 클래스 반환
+            return [permission() for permission in self.permission_classes]
 
 
+class RandomWordView(APIView):
+    def get(self, request):
+        words = WikiDocument.objects.all()
+        if words.exists():
+            random_word = random.choice(words)
+            serializer = WikiDocumentSerializer(random_word)
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        else:
+            return Response({'message': '등록된 단어가 없습니다.'}, status=status.HTTP_404_NOT_FOUND)
+        
+        
+class SearchWikiDocumentView(APIView):
+    def get(self, request):
+        search_query = request.query_params.get('q', '')
+        if not search_query:
+            return Response({"error": "검색어를 입력해주세요."}, status=status.HTTP_400_BAD_REQUEST)
 
-def wiki_document_list(request):
-    documents = WikiDocument.objects.all()
-    return render(request, 'wiki_document_list.html', {'documents': documents})
+        # 데이터베이스에서 검색어를 포함하는 글들을 찾음
+        search_results = WikiDocument.objects.filter(title__icontains=search_query)
 
-def wiki_document_detail(request, document_id):
-    document = get_object_or_404(WikiDocument, id=document_id)
-    return render(request, 'wiki_document_detail.html', {'document': document})
-
-@login_required
-def update_wiki_document(request, document_id):
-    document = get_object_or_404(WikiDocument, id=document_id)
-
-    if request.method == 'POST':
-        form = WikiDocumentForm(request.POST, instance=document)
-        if form.is_valid():
-            form.save()
-            return redirect('wiki_document_list')  # 수정 후 문서 목록 페이지로 이동
-    else:
-        form = WikiDocumentForm(instance=document)
-
-    return render(request, 'update_wiki_document.html', {'form': form})
-
-@login_required
-def user_wiki_documents(request, user_id):
-    user_documents = WikiDocument.objects.filter(author=request.user)
-    return render(request, 'user_wiki_documents.html', {'user_documents': user_documents})
-
-def wiki_document_detail(request, document_id):
-    document = get_object_or_404(WikiDocument, id=document_id)
-    return render(request, 'wiki_document_detail.html', {'document': document})
-
-
-@login_required
-def delete_wiki_document(request, document_id):
-    document = get_object_or_404(WikiDocument, id=document_id)
-
-    if request.method == 'POST':
-        document.delete()
-        return redirect('wiki_document_list')  # 삭제 후 문서 목록 페이지로 이동
-
-    return render(request, 'delete_wiki_document.html', {'document': document})
-
-
-
-# 회원가입 뷰
-def signup(request):
-    if request.method == 'POST':
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            user = form.save()
-            login(request, user)  # 회원가입 후 자동 로그인
-            return redirect('index')
-    else:
-        form = UserCreationForm()
-    return render(request, 'signup.html', {'form': form})
-
-# 로그인 뷰
-def login_view(request):
-    if request.method == 'POST':
-        form = AuthenticationForm(data=request.POST)
-        if form.is_valid():
-            user = form.get_user()
-            login(request, user)
-            return redirect('index')  # 로그인 성공 시 index로 리다이렉트
-    else:
-        form = AuthenticationForm()
-    return render(request, 'login.html', {'form': form})
-
+        # 검색 결과를 직렬화하여 반환
+        serializer = WikiDocumentSerializer(search_results, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)    
+    # http://127.0.0.1:8000/api/search/?q=검색어 이런식으로 쿼리
