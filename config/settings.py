@@ -29,7 +29,7 @@ SECRET_KEY=get_secret('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["3.34.140.180"]
+ALLOWED_HOSTS = ["127.0.0.1","3.34.140.180"]
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'wiki',
+    'account',
     'rest_framework',
     'rest_framework.authtoken',
 ]

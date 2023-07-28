@@ -5,28 +5,15 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
-
-
 import random
+
+
 
 class WikiDocumentViewSet(viewsets.ModelViewSet):
     queryset = WikiDocument.objects.all()
     serializer_class = WikiDocumentSerializer
+    permission_classes = []  # 모든 CRUD 작업에 대해 로그인 없이 접근 가능하도록 설정
 
-    # Create, Update, Delete 기능에만 로그인이 필요하도록 설정
-    permission_classes_by_action = {
-        'create': [IsAuthenticated],
-        'update': [IsAuthenticated],
-        'destroy': [IsAuthenticated],
-    }
-
-    def get_permissions(self):
-        try:
-            # 현재 요청하는 액션에 따라 적절한 퍼미션 클래스를 가져옴
-            return [permission() for permission in self.permission_classes_by_action[self.action]]
-        except KeyError:
-            # 지정한 액션에 대한 퍼미션 클래스가 없으면 기본 퍼미션 클래스 반환
-            return [permission() for permission in self.permission_classes]
 
 
 class RandomWordView(APIView):
