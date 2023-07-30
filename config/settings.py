@@ -45,7 +45,25 @@ INSTALLED_APPS = [
     'account',
     'rest_framework',
     'rest_framework.authtoken',
+    'corsheaders.middleware.CorsMiddleware',  # 추가: CORS 미들웨어를 사용하기 위해 추가
+    'django.middleware.common.CommonMiddleware',
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ALLOW_CREDENTIALS = True 
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+] 
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
