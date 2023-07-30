@@ -45,8 +45,7 @@ INSTALLED_APPS = [
     'account',
     'rest_framework',
     'rest_framework.authtoken',
-    'corsheaders.middleware.CorsMiddleware',  # 추가: CORS 미들웨어를 사용하기 위해 추가
-    'django.middleware.common.CommonMiddleware',
+    'corsheaders',  
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
@@ -73,6 +72,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  # 추가: CORS 미들웨어를 사용하기 위해 추가
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'config.urls'
