@@ -8,5 +8,4 @@ urlpatterns = [
     path('', schema_view),
     path('admin/', admin.site.urls),
     path('api/', include('wiki.urls')),# 앱 폴더 내의 urls.py로 URL 패턴을 넘겨줌
-    path('account/',include('account.urls'))
 ]

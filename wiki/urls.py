@@ -7,6 +7,6 @@ router.register(r'crud', WikiDocumentViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('random-word/', RandomWordView.as_view(), name='random-word'),
-    path('search/', SearchWikiDocumentView.as_view(), name='search'),
+    path('random-word/', RandomWordView.as_view(), name='random-word'), # 오늘의 단어
+    path('search/', SearchWikiDocumentView.as_view(), name='search'), # 검색
 ]
