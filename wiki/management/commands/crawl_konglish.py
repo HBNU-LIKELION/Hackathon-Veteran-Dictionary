@@ -84,4 +84,4 @@ class Command(BaseCommand):
 
     def save_to_database(self, data_list):
         for data in data_list:
-            WikiDocument.objects.create(title=data['title'], image=data['image_url'], content=data['content'])
+            WikiDocument.objects.create(title=data['title'], image=data['image_url'], content=data['content'],category='konglish')
