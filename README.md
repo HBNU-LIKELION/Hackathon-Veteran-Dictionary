@@ -48,7 +48,7 @@
  FrontEnd: <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
   <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
   <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">  <br>
- BackEnd:   <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">    <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white"> <br>
+ BackEnd:   <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">    <img src="https://img.shields.io/badge/django rest framework-092E20?style=for-the-badge&logo=django&logoColor=white"> <br>
  Etc:   <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
   <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
   <img src="https://img.shields.io/badge/jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white">
@@ -76,8 +76,6 @@
 -----
 2023.07.28 by 김정희
 
-크롤링 구현 성공해서 지금 DB에 올려놨어요. <br>
-test_crawling.py는 그냥 테스트용으로 함수 따로 만들어논거라 신경 안쓰셔도 될거같고 <br>
 실제 크롤링 구현된 파일은 wiki>management>commands>crawling.py안에 넣어놨어요.  <br>
 이거 참고하시면 될거같고.. <br>
 만약에 다른사이트를 추가로 크롤링하고싶으면... 크롤링하는 파이썬 파일 하나 더 만들어서 오픈사전 크롤링하는 부분은 이전꺼 참고해서 직접 짜야할거같고, <br>
@@ -89,21 +87,12 @@ test_crawling.py는 그냥 테스트용으로 함수 따로 만들어논거라 �
 ----------------------
 
 2023.07.27
-by 김정희
-api url이 좀 복잡하고 더러워서 수정
-api 서버 주소는 톡방에 있어요
+api 명세서
 
-1)주소/ =>버전이랑 엔드포인트들 반환하는 schema_view입니다.
+주소/api/ << 여기 뒤에
+<ul>
+<li> api/crud/  =>글에 대한 ViewSet이라 crud용으로 쓰면 될거같네요.DB의 스키마 뷰가 들어있을겁니다 </li>
+<li> api/random-word/ =>작성한 글들 중하나랜덤으로 골라서 정보를 json으로 반환. "오늘의 단어" 기능으로 보면 될거같기도..? </li>
+<li>api/search/ =>주소/api/search/?q=검색어 이런식으로 쿼리 </li>   
+</ul>  
 
-2)주소/api/
-  여기 뒤에
-  
-    api/crud/  =>글에 대한 ViewSet이라 crud용으로 쓰면 될거같네요.DB의 스키마 뷰가 들어있을겁니다
- 
-    
-    api/random-word/ =>작성한 글들 중하나랜덤으로 골라서 정보를 json으로 반환. "오늘의 단어" 기능으로 보면 될거같기도..?
-    api/search/ =>주소/api/search/?q=검색어 이런식으로 쿼리
-    
-3)주소/account/
-  여기 뒤에
-  signup/,login/,logout/ 로그인 관련되어서 토큰도 반환 가능하게해봤어요
