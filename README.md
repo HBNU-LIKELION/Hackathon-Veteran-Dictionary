@@ -1,7 +1,9 @@
 # Hackathon-Veteran-Dictionary
 💥 멋사 해커톤 프로젝트 노련한 사전
 
-![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/117091989/0fd2df63-2e57-438c-bf64-f70e5c1a55d0)
+![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/117091989/db43eb5f-182a-4192-bf5a-b92822ac3102)
+
+
 
 ><p align="center">급변하는 세계, 우후죽순처럼 튀어나오는 새로운 언어, 노인들은 이를 따라잡기에는 혼란스럽기만 합니다.</p>
 ><p align="center">'노련한 사자' 어플리케이션과 함께라면, 연령커브로 인한 언어의 장벽도 어렵지 않아요.</p>
