@@ -36,8 +36,9 @@
 
 
 
-🦁 **프로젝트 화면 구성**
+🦁 **프로젝트 전체 구성**
 
+![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/117091989/15cf3cb1-d818-4b12-9249-6b5b65716bb2)
 
 
 
@@ -59,9 +60,10 @@
 
 
 
-🦁 **제작 과정 중 이슈**
+🦁 **프로젝트 구성 화면**
 
 
+![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/117091989/4b17616e-7e95-4c97-940f-648305e98e06)
 
 
 
