@@ -3,7 +3,7 @@
 
 ![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/117091989/0fd2df63-2e57-438c-bf64-f70e5c1a55d0)
 
-><p align="center">급변하는 세계, 우후죽순처럼 튀어나오는 정보와 새로운 언어, 노인들은 이를 따라잡기에는 혼란스럽기만 합니다.</p>
+><p align="center">급변하는 세계, 우후죽순처럼 튀어나오는 새로운 언어, 노인들은 이를 따라잡기에는 혼란스럽기만 합니다.</p>
 ><p align="center">'노련한 사자' 어플리케이션과 함께라면, 연령커브로 인한 언어의 장벽도 어렵지 않아요.</p>
 ><p align="center">세상의 흐름에 따라 변화하는 단어들도 쉽게 익힐 수 있어요.</p>
 ><p align="center">지금 '노련한 사자'와 함께라면, 노년의 황금기도 새로운 지식과 함께 빛나게 됩니다!"</p>
