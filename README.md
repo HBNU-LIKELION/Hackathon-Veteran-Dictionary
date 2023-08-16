@@ -2,8 +2,6 @@
 
 ![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/117091989/db43eb5f-182a-4192-bf5a-b92822ac3102)
 
-
-
 ><p align="center">급변하는 세계, 우후죽순처럼 튀어나오는 새로운 언어, 노인들은 이를 따라잡기에는 혼란스럽기만 합니다.</p>
 ><p align="center">'노련한 사자' 어플리케이션과 함께라면, 연령커브로 인한 언어의 장벽도 어렵지 않아요.</p>
 ><p align="center">세상의 흐름에 따라 변화하는 단어들도 쉽게 익힐 수 있어요.</p>
@@ -24,8 +22,6 @@
   </tbody>
 </table>
 
-
-
 🦁 **기능 및 특징 소개**
 <ul>
 <li>노인들이 인지하기 쉽게 한눈에 들어오는 UI</li>
@@ -34,17 +30,8 @@
 </ul>
 
 
-
 🦁 **프로젝트 전체 구성**
-
-![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/69416617/1e300230-44ed-4c5b-811b-ed02bcd1b8e4)
-
-
-
-
-
-
-
+![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/117091989/421a31cf-bb6e-4bc6-a7ea-7bc64d5876ed)
 
 🦁 **사용한 기술 스택**<br>
 <div>
@@ -59,12 +46,9 @@
 </div>
 <br>
 
-
-
 🦁 **프로젝트 구성 화면**
 
-
-![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/117091989/4b17616e-7e95-4c97-940f-648305e98e06)
+![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/69416617/1e300230-44ed-4c5b-811b-ed02bcd1b8e4)
 
 
 
