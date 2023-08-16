@@ -1,4 +1,3 @@
-![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/69416617/c9a5d1fc-1343-4121-b271-6b96ad15a63a)# Hackathon-Veteran-Dictionary
 💥 멋사 해커톤 프로젝트 노련한 사전
 
 ![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/117091989/db43eb5f-182a-4192-bf5a-b92822ac3102)
