@@ -1,4 +1,4 @@
-# Hackathon-Veteran-Dictionary
+![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/69416617/c9a5d1fc-1343-4121-b271-6b96ad15a63a)# Hackathon-Veteran-Dictionary
 💥 멋사 해커톤 프로젝트 노련한 사전
 
 ![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/117091989/db43eb5f-182a-4192-bf5a-b92822ac3102)
@@ -38,7 +38,7 @@
 
 🦁 **프로젝트 전체 구성**
 
-![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/117091989/421a31cf-bb6e-4bc6-a7ea-7bc64d5876ed)
+![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/69416617/1e300230-44ed-4c5b-811b-ed02bcd1b8e4)
 
 
 
@@ -66,6 +66,7 @@
 
 
 ![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/117091989/4b17616e-7e95-4c97-940f-648305e98e06)
+
 
 
 
