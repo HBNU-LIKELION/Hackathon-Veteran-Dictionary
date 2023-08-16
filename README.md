@@ -27,7 +27,7 @@
 <br>
 <br>
 
-### 🦁 **프로젝트 전체 구성**
+### 🦁 **프로젝트 아키텍쳐**
 ![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/117091989/421a31cf-bb6e-4bc6-a7ea-7bc64d5876ed)
 
 <br>
@@ -46,7 +46,7 @@
 <br>
 <br>
 
-### 🦁 **프로젝트 아키텍쳐**
+### 🦁 **프로젝트 화면 구성**
 ![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/69416617/1e300230-44ed-4c5b-811b-ed02bcd1b8e4)
 
 <br>
