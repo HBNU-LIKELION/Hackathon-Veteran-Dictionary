@@ -1,0 +1,128 @@
+body {
+    width: 390px;
+    height: 844px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin:auto;
+    position: relative;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+header {
+    width: 350px;
+    height: 50px;
+    border: 1px solid rgb(232, 231, 231);
+    border-radius: 20px;
+    background-color: rgb(232, 231, 231);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 35px;
+}
+
+.search{
+    width: 270px;
+    height: 45px;
+    outline: none;
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 10px;
+    border: 0px solid #ccc;
+    border-radius: 20px;
+    background-color: rgb(232, 231, 231);
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 20px;
+}
+
+.find_icon{
+    border: 0px solid rgb(232, 231, 231);
+    background-color: rgb(232, 231, 231);
+}
+
+.find_icon  i:hover{
+    color: white;
+}
+
+section {
+    text-align: center;
+    width: 360px;
+    height: 700px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 30px;
+}
+
+.word_img{
+    width: 350px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    
+}
+
+/* .word_mean_bar{
+    text-align: left;
+    width: 350px;
+    height: 110px;
+    border-radius: 20px;
+    background-color: rgb(232, 231, 231);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 10px;
+} */
+
+.word_exam_bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto; /* 너비 자동 조절 */
+    max-width: 350px; /* 최대 너비 설정 */
+    height: auto;
+    border: 3px solid #00000012;
+    border-radius: 20px;
+}
+
+p {
+    margin: 0px;
+}
+
+.mean {
+    color: orange;
+}
+
+footer {
+    position: relative;
+}
+
+.bottom-btn {
+    width: 320px;
+    height: 60px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    background-color: orange;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+.bottom-btn:hover {
+    background-color: rgb(255, 197, 89);
+}
+
+section::-webkit-scrollbar {
+    width: 5px;
+}
+section::-webkit-scrollbar-thumb {
+    background-color: #636567;
+    border-radius: 5px;
+}

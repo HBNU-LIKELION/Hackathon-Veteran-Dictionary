@@ -1,0 +1,100 @@
+/* word에 있는 코드와 충돌되어 주석처리했습니다. */
+/* 일반적으로 react에서는 body, head, footer 태그에 직접적으로 css 설정을 하는 것은 지양하는 편입니다. */
+/* body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  } */
+
+.screen {
+  width: 390px;
+  height: 844px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.screen {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.screen .div {
+  background-color: #ffffff;
+  border: 1px none;
+  height: 844px;
+  position: relative;
+  width: 390px;
+}
+
+.screen .overlap-group {
+  border: 2px solid;
+  border-color: #ff4949;
+  border-radius: 30px;
+  height: 34px;
+  left: 150px;
+  position: absolute;
+  top: 720px;
+  width: 91px;
+}
+
+.screen .text-wrapper {
+  color: #ff4949;
+  font-family: 'Inter-SemiBold', Helvetica;
+  padding-top: 9px;
+  margin-left: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  height: 20px;
+  left: 14px;
+  letter-spacing: -0.36px;
+  line-height: 18px;
+  position: relative;
+  bottom: 10px;
+  text-align: center;
+  top: 0;
+  width: 54px;
+}
+
+.screen .flexcontainer {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 382px;
+  left: 91px;
+  position: absolute;
+  top: 171px;
+  width: 208px;
+}
+
+.screen .text {
+  align-self: stretch;
+  color: #000000;
+  font-family: 'Inter-SemiBold', Helvetica;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: -1.6px;
+  line-height: 80px;
+  position: relative;
+  text-align: center;
+}
+
+.screen .span {
+  color: #000000;
+  font-family: 'Inter-SemiBold', Helvetica;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: -1.6px;
+  line-height: 80px;
+}

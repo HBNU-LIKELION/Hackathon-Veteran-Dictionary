@@ -1,0 +1,11 @@
+{
+  "short_name": "노련한 사자",
+  "name": "노련한 사자",
+  "icons": [
+
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

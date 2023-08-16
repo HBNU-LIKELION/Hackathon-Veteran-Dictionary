@@ -1,0 +1,100 @@
+// import { useNavigate } from 'react-router-dom';
+// import { useDispatch } from 'react-redux';
+// import { dir } from "../store/directionSlice";
+
+// const WordPage = () => {
+//   const dispatch = useDispatch();
+//   const navigate = useNavigate();
+//   const move = () => {
+//     navigate('/main');
+//     dispatch(dir('left'));
+//   };
+//   return (
+//     <div className="basic-wrapper">
+//       <header>
+//         <input
+//           className="search"
+//           type="text"
+//           placeholder="단어를 검색해보세요!"
+//         ></input>
+//         <button className="find_icon">
+//           <i className="fa-solid fa-magnifying-glass"></i>
+//         </button>
+//       </header>
+//       <section>
+//         <div className="content">
+//           {/* <img class="word_img" src="take_aout.jpg"> */}
+//           <div className="word_exam_bar">
+//             <div className="word_mean_bar">
+//               <p className="mean">포장하기</p>
+//               <p>라는 뜻이에요</p>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+//       <footer>
+//         <input
+//           className="bottom-btn"
+//           type="submit"
+//           value="뒤로 가기"
+//           onClick={() =>move()}
+//         ></input>
+//       </footer>
+//     </div>
+//   );
+// };
+
+// export default WordPage;
+
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { dir } from "../store/directionSlice";
+import { useLocation } from 'react-router-dom';
+
+const WordPage = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const move = () => {
+    navigate('/main');
+    dispatch(dir('left'));
+
+  };
+
+  return (
+    <div className="basic-wrapper">
+      <header>
+        <input
+          className="search"
+          type="text"
+          placeholder="단어를 검색해보세요!"
+        ></input>
+        <button className="find_icon">
+          <i className="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </header>
+      <section>
+        <div className="content">
+          {/* <img class="word_img" src="take_aout.jpg"> */}
+          <div className="word_exam_bar">
+            <div className="word_mean_bar">
+              <p className="mean">{location.state.content}</p>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <input
+          className="bottom-btn"
+          type="submit"
+          value="뒤로 가기"
+          onClick={() =>move()}
+        ></input>
+      </footer>
+    </div>
+  );
+};
+
+export default WordPage;
