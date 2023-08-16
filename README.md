@@ -13,7 +13,7 @@
 ### 🦁 **팀원**
 |                                         Backend                                          |                                         Backend                                          |                                         Backend                                          |                                         Frontend                                         |
 | :--------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
-| <img src="" width=400px alt=""/> | <img src="" width=400px alt=""/> | <img src="" width=400px alt=""/> | <img src="" width=400px alt=""/> |
+| <img src="" width=400px alt=""/> | <img src="" width=400px alt=""/> | <img src="" width=400px alt=""/> | <img src="https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/69416617/1073b9e8-9dad-4137-80e0-13570537b6e4" width=400px alt=""/> |
 |                       [김민석](https://github.com/tributetothemoon)                        |                            [김정희](https://github.com/PlagueRabbit)                            |                            [전소연](https://github.com/Jeonsso)                            |                          [윤나현](https://github.com/ynh626)                           |
 
 <br>
