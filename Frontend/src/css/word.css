@@ -40,7 +40,9 @@ header {
 
 .find_icon{
     border: 0px solid rgb(232, 231, 231);
-    background-color: rgb(232, 231, 231);
+    background-color: rgb(232, 231, 231);    
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
 }
 
 .find_icon  i:hover{
