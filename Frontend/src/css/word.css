@@ -95,8 +95,15 @@ p {
 }
 
 .mean {
-    color: orange;
+    color: black;
+    font-size: 30px;
 }
+
+.mean_content {
+    color: black;
+    font-size: 25px;
+}
+
 
 footer {
     position: relative;

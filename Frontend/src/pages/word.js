@@ -56,6 +56,11 @@ const WordPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  //image 바꾸기
+  const backgroundImageStyle = {
+    backgroundImage: `url(${location.state.image})` // values 객체에서 이미지 URL을 가져와서 배경 이미지로 설정
+  };
+
   const move = () => {
     navigate('/main');
     dispatch(dir('left'));
@@ -75,11 +80,13 @@ const WordPage = () => {
         </button>
       </header>
       <section>
+      <div class="today-word-image" style={backgroundImageStyle}></div>
         <div className="content">
           {/* <img class="word_img" src="take_aout.jpg"> */}
+          <p className="mean">{location.state.title}</p>
           <div className="word_exam_bar">
             <div className="word_mean_bar">
-              <p className="mean">{location.state.content}</p>
+              <p className="mean_content">{location.state.content}</p>
               
             </div>
           </div>
