@@ -16,17 +16,17 @@ body {
 
 header {
     width: 350px;
-    height: 50px;
+    height: 52px;
     border: 1px solid rgb(232, 231, 231);
     border-radius: 20px;
     background-color: rgb(232, 231, 231);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 
 .search {
     width: 270px;
-    height: 45px;
+    height: 48px;
     outline: none;
     margin: auto;
     margin-left: 20px;
@@ -73,6 +73,7 @@ section {
 
 .today-word-image {
     background-image: url('https://i0.wp.com/news.northeastern.edu/wp-content/uploads/2022/08/082222_MM_Takeout-Meals_007.jpg?w=1400&ssl=1');
+    object-fit: cover;
     background-position: -7.098px -121.815px;
     background-size: 103.951% 160.795%;
     border-radius: 20px;
@@ -80,7 +81,7 @@ section {
     flex-shrink: 0;
     height: 320px;
     width: 350px;
-    margin: 0px 2px 13px 0px;
+    margin: 10px 2px 13px 0px;
     position: relative;
 }
 
@@ -112,10 +113,11 @@ section {
     font-size: 20px;
     font-weight: 700;
     position: absolute;
-    left: 60%;
+    left: 50%;
     transform: translate(-50%, -50%);
     top: 265px;
-    width: 300px;
+    width: auto;
+    height: 29px;
 }
 
 

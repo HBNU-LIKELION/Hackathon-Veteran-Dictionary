@@ -104,10 +104,10 @@ const MainPage = () => {
                     <span class="word-category">
                       {values.title}
                     </span>
-                    <span class="word-meaning">이(가) 무슨 말인지</span>
                 </div>
             </div>
         </div>
+        <br></br>
         <div class="button-group">
             <div class="know">알아요</div>
             <input class="dont-know" type="submit" value="몰라요" onClick={() =>move()}></input>

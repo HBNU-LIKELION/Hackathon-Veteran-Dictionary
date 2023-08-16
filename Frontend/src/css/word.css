@@ -21,7 +21,7 @@ header {
     border-radius: 20px;
     background-color: rgb(232, 231, 231);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 .search{
@@ -63,6 +63,7 @@ section {
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     margin-bottom: 30px;
+    object-fit: cover;
     
 }
 
@@ -96,6 +97,7 @@ p {
 
 .mean {
     color: orange;
+    letter-spacing: 3px;
 }
 
 footer {

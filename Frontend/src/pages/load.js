@@ -25,7 +25,7 @@ const LoadPage = () => {
               </span>
             </div>
             <div className="text">
-              <span className="span">
+              <span className="span" style={{letterSpacing: '-6px'}}>
                 한🦁
                 <br />
               </span>
