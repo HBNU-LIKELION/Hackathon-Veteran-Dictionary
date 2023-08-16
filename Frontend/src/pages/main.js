@@ -86,6 +86,7 @@ const MainPage = () => {
     dispatch(dir('right'));
   }
 
+  console.log(values);
 
   return (
     <div className="basic-wrapper">

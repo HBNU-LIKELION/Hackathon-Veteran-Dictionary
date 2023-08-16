@@ -80,6 +80,7 @@ const WordPage = () => {
         </button>
       </header>
       <section>
+      <div className="word_mean_bar" style={{letterSpacing: '3px', color: 'orange', fontSize:'35px'}}>{location.state.title}</div>
       <div class="today-word-image" style={backgroundImageStyle}></div>
         <div className="content">
           {/* <img class="word_img" src="take_aout.jpg"> */}
