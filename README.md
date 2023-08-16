@@ -11,23 +11,17 @@
 <br>
 
 ### 🦁 **팀원**
-<table>
-  <tbody>
-    <tr>
-      <td align="center"><a href=""><img src="" width="100px;" alt=""/><br /><sub><b>BE 팀원 : </b></sub></a><br /></td>
-      <td align="center"><a href=""><img src="" width="100px;" alt=""/><br /><sub><b>BE 팀원 : </b></sub></a><br /></td>
-      <td align="center"><a href=""><img src="" width="100px;" alt=""/><br /><sub><b>BE 팀원 : </b></sub></a><br /></td>   
-      <td align="center"><a href=""><img src="width="100px;" alt=""/><br /><sub><b>FE 팀원 : </b></sub></a><br /></td>
-    </tr>
-  </tbody>
-</table>
+|                                         Backend                                          |                                         Backend                                          |                                         Backend                                          |                                         Frontend                                         |
+| :--------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
+| <img src="" width=400px alt=""/> | <img src="" width=400px alt=""/> | <img src="" width=400px alt=""/> | <img src="" width=400px alt=""/> |
+|                       [김민석](https://github.com/tributetothemoon)                        |                            [김정희](https://github.com/PlagueRabbit)                            |                            [전소연](https://github.com/Jeonsso)                            |                          [윤나현](https://github.com/ynh626)                           |
 
 <br>
 <br>
 
 ### 🦁 **기능 및 특징**
-<li>노인들이 인지하기 쉽게 한눈에 들어오는 UI</li>
-<li>단어를 알아요? 몰라요?로 뜻을 확실히 아는가? 체크</li>
+<li>노인들이 인지하기 쉽게 한 눈에 들어오는 화면</li>
+<li>단어 퀴즈로 확실히 아는 단어인지 체크</li>
 <li>단어에 대한 간결한 설명과 이미지 제공 </li>
 
 <br>
@@ -41,12 +35,10 @@
 
 ### 🦁 **사용한 기술 스택**<br>
 #### FrontEnd
-<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/redux-764ABC?style=for-the-badge&logo=redux&logoColor=black"><img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
-  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
-  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/redux-764ABC?style=for-the-badge&logo=redux&logoColor=black"><img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"><img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"><img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 <br>
 #### BackEnd
-<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">    <img src="https://img.shields.io/badge/django rest framework-092E20?style=for-the-badge&logo=django&logoColor=white">
+<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/django rest framework-092E20?style=for-the-badge&logo=django&logoColor=white">
 <br>
 #### ETC
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"><img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"><img src="https://img.shields.io/badge/jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"><img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=white">
