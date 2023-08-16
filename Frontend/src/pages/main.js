@@ -109,7 +109,7 @@ const MainPage = () => {
         </div>
         <br></br>
         <div class="button-group">
-            <div class="know">알아요</div>
+            <input class="know" type="submit" value="알아요" onClick={() =>{window.location.reload()}}></input>
             <input class="dont-know" type="submit" value="몰라요" onClick={() =>move()}></input>
         </div>
     </section>
