@@ -10,7 +10,7 @@
 <br>
 <br>
 
-### 🦁 **팀원 구성**
+### 🦁 **팀원**
 <table>
   <tbody>
     <tr>
@@ -25,7 +25,7 @@
 <br>
 <br>
 
-### 🦁 **기능 및 특징 소개**
+### 🦁 **기능 및 특징**
 <li>노인들이 인지하기 쉽게 한눈에 들어오는 UI</li>
 <li>단어를 알아요? 몰라요?로 뜻을 확실히 아는가? 체크</li>
 <li>단어에 대한 간결한 설명과 이미지 제공 </li>
@@ -54,7 +54,7 @@
 <br>
 <br>
 
-### 🦁 **프로젝트 구성 화면**
+### 🦁 **프로젝트 아키텍쳐**
 ![image](https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/69416617/1e300230-44ed-4c5b-811b-ed02bcd1b8e4)
 
 <br>
