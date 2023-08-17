@@ -1,6 +1,6 @@
 # 🦁 노련한 사전
 
-<div align="center"><img src="https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/69416617/e8262790-345a-4bec-9267-0b9e2a91eef2" width="40%"/></div>
+<div align="center"><img src="https://github.com/HBNU-LIKELION/Hackathon-Veteran-Dictionary/assets/69416617/40839f67-0a1c-4d92-8112-e65c1d7abe12" width="40%"/></div>
 
 <p align="center">급변하는 세계, 우후죽순처럼 튀어나오는 새로운 언어, 어르신 분들이 이를 따라잡기에는 혼란스럽기만 합니다.</p>
 <p align="center">'노련한 사전' 어플리케이션과 함께라면, 연령커브로 인한 언어의 장벽도 어렵지 않아요.</p>
