@@ -103,7 +103,10 @@ const MainPage = () => {
                 <div class="rectangle"></div>
                 <div class="question-container">
                     <span class="word-category">
-                      {values.title}
+                      {values.title}이(가) 무슨 말인지
+                    </span>
+                    <span>
+                      
                     </span>
                 </div>
             </div>
