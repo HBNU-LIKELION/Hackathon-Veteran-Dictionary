@@ -17,7 +17,7 @@ body {
 header {
     width: 350px;
     height: 52px;
-    border: 1px solid rgb(232, 231, 231);
+    border: 7px solid rgb(232, 231, 231);
     border-radius: 20px;
     background-color: rgb(232, 231, 231);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -28,20 +28,22 @@ header {
     width: 270px;
     height: 48px;
     outline: none;
-    margin: auto;
+    margin-bottom: 5px;
     margin-left: 20px;
-    margin-right: 10px;
+    margin-right: 5px;
     border: 0px solid #ccc;
     border-radius: 20px;
     background-color: rgb(232, 231, 231);
     font-family: 'Gowun Dodum', sans-serif;
     font-size: 20px;
+    overflow: hidden;
 }
 
 .find_icon {
-    border: 0px solid rgb(232, 231, 231);
+    border: none;
     background-color: rgb(232, 231, 231);
-    
+    appearance: none;
+    border-radius: 0;
     -webkit-appearance: none;
     -webkit-border-radius: 0;
 }

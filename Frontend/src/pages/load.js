@@ -12,36 +12,36 @@ const LoadPage = () => {
 
   return (
 
-      <div className="basic-wrapper screen" onClick={()=>move()}>
-        <div className="div">
-          <div className="overlap-group">
-            <div className="text-wrapper">HBNU</div>
+    <div className="basic-wrapper screen" onClick={() => move()}>
+      <div className="div">
+        <div className="overlap-group">
+          <div className="text-wrapper">HBNU</div>
+        </div>
+        <div className="flexcontainer">
+          <div className="text">
+            <span className="span">
+              노련
+              <br/>
+            </span>
           </div>
-          <div className="flexcontainer">
-            <div className="text">
-              <span className="span">
-                노련
-                <br />
-              </span>
-            </div>
-            <div className="text">
-              <span className="span" style={{letterSpacing: '-6px'}}>
-                한🦁
-                <br />
-              </span>
-            </div>
-            <div className="text">
-              <span className="span">
-                {' '}
-                <br />
-              </span>
-            </div>
-            <div className="text">
-              <span className="span">사전</span>
-            </div>
+          <div className="text">
+            <span className="span" style={{ letterSpacing: '-6px' }}>
+              한🦁
+              <br/>
+            </span>
+          </div>
+          <div className="text">
+            <span className="span">
+              {' '}
+              <br/>
+            </span>
+          </div>
+          <div className="text">
+            <span className="span">사전</span>
           </div>
         </div>
       </div>
+    </div>
 
   );
 };

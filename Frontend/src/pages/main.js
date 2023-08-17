@@ -47,7 +47,7 @@
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { dir } from "../store/directionSlice";
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const MainPage = () => {
@@ -55,7 +55,7 @@ const MainPage = () => {
   const [values, setValues] = useState([]);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  
+
   //API연동
   useEffect(() => {
     const fetchData = async () => {
@@ -73,14 +73,14 @@ const MainPage = () => {
   const backgroundImageStyle = {
     backgroundImage: `url(${values.image})` // values 객체에서 이미지 URL을 가져와서 배경 이미지로 설정
   };
-  
+
   const move = () => {
     navigate('/word', {
       state: values
     });
     dispatch(dir('right'));
   };
-  
+
   const move2 = () => {
     navigate('/search');
     dispatch(dir('right'));
@@ -91,29 +91,39 @@ const MainPage = () => {
   return (
     <div className="basic-wrapper">
       <header>
-        <input class="search" type="text" placeholder="단어를 검색해보세요!" onClick={() =>move2()}></input>
-        <button class="find_icon"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </header>
+        <div style={{ flexDirection: "row", display: "flex" }}>
+          <input
+            className="search"
+            type="text"
+            placeholder="단어를 검색해보세요!"
+            onClick={() => move2()}
+          />
+          <button className="find_icon">
+            <i className="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
 
-    <section>
+      </header>
+
+      <section>
         <div class="content">
-            <div class="today-word">단어 퀴즈</div>
-            <div class="today-word-image" style={backgroundImageStyle}>
-                <div class="overlay"></div>
-                <div class="rectangle"></div>
-                <div class="question-container">
-                    <span class="word-category">
-                      {values.title}
-                    </span>
-                </div>
+          <div class="today-word">단어 퀴즈</div>
+          <div class="today-word-image" style={backgroundImageStyle}>
+            <div class="overlay"></div>
+            <div class="rectangle"></div>
+            <div class="question-container">
+              <span class="word-category">
+                {values.title}
+              </span>
             </div>
+          </div>
         </div>
         <br></br>
         <div class="button-group">
-            <input class="know" type="submit" value="알아요" onClick={() =>{window.location.reload()}}></input>
-            <input class="dont-know" type="submit" value="몰라요" onClick={() =>move()}></input>
+          <input class="know" type="submit" value="알아요" onClick={() => { window.location.reload() }}></input>
+          <input class="dont-know" type="submit" value="몰라요" onClick={() => move()}></input>
         </div>
-    </section>
+      </section>
     </div>
   );
 };

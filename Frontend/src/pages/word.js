@@ -67,18 +67,28 @@ const WordPage = () => {
 
   };
 
+  const move2 = () => {
+    navigate('/search');
+    dispatch(dir('right'));
+
+  };
+
   return (
     <div className="basic-wrapper">
       <header>
+      <div style={{ flexDirection: "row", display: "flex" }}>
         <input
           className="search"
           type="text"
           placeholder={location.state.title}
+          onClick={() =>move2()}
         ></input>
         <button className="find_icon">
           <i className="fa-solid fa-magnifying-glass"></i>
         </button>
+      </div>
       </header>
+
       <section>
       <div className="word_mean_bar" style={{letterSpacing: '3px', color: 'orange', fontSize:'35px'}}>{location.state.title}</div>
       <div class="today-word-image" style={backgroundImageStyle}></div>
