@@ -113,15 +113,14 @@ section {
 .question-container {
     align-items: baseline;
     color: #000000;
-    display: flex;
     font-size: 20px;
     font-weight: 700;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     top: 265px;
-    width: auto;
-    height: 29px;
+    width: 250px;
+    height: auto;
 }
 
 

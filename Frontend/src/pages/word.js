@@ -70,8 +70,12 @@ const WordPage = () => {
   const move2 = () => {
     navigate('/search');
     dispatch(dir('right'));
+<<<<<<< HEAD
 
   };
+=======
+  }
+>>>>>>> 6ef90b9171624d100ebd4ff1fed42c830861ceb5
 
   return (
     <div className="basic-wrapper">
@@ -82,7 +86,11 @@ const WordPage = () => {
           type="text"
           placeholder={location.state.title}
           onClick={() =>move2()}
+<<<<<<< HEAD
         ></input>
+=======
+        />
+>>>>>>> 6ef90b9171624d100ebd4ff1fed42c830861ceb5
         <button className="find_icon">
           <i className="fa-solid fa-magnifying-glass"></i>
         </button>

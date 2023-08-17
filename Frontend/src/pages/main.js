@@ -107,6 +107,7 @@ const MainPage = () => {
 
       <section>
         <div class="content">
+<<<<<<< HEAD
           <div class="today-word">단어 퀴즈</div>
           <div class="today-word-image" style={backgroundImageStyle}>
             <div class="overlay"></div>
@@ -115,6 +116,20 @@ const MainPage = () => {
               <span class="word-category">
                 {values.title}
               </span>
+=======
+            <div class="today-word">단어 퀴즈</div>
+            <div class="today-word-image" style={backgroundImageStyle}>
+                <div class="overlay"></div>
+                <div class="rectangle"></div>
+                <div class="question-container">
+                    <span class="word-category">
+                      {values.title}이(가) 무슨 말인지
+                    </span>
+                    <span>
+                      
+                    </span>
+                </div>
+>>>>>>> 6ef90b9171624d100ebd4ff1fed42c830861ceb5
             </div>
           </div>
         </div>
